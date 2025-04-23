@@ -22,14 +22,16 @@ void menu::print_menu()
 	//this is very irresponsible, it's permanant.
 
 	cout << "Your choice: ";
-	cin >> input;// same line
-	
-	
-	
+	// same line
+
+
 }
 
-void menu::set_input(int input)
+void menu::set_input()// hmmmm
 {
+	cin >> input;
+	if (input < 1 or input > 5)
+		throw 1; //error code 1 is input out of range
 	this->input = input;
 }
 
@@ -40,5 +42,7 @@ int menu::getinput()
 
 menu::menu()
 {
+	input = 1;
+	menu::color(7);
 	//no constructor
 }

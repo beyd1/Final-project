@@ -131,6 +131,7 @@
     <ClCompile Include="lotto.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="non_perishable.cpp" />
+    <ClCompile Include="point.cpp" />
     <ClCompile Include="produce.cpp" />
     <ClCompile Include="products.cpp" />
     <ClCompile Include="tobacco.cpp" />
@@ -139,6 +140,7 @@
     <ClInclude Include="lotto.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="non_perishable.h" />
+    <ClInclude Include="point.h" />
     <ClInclude Include="produce.h" />
     <ClInclude Include="products.h" />
     <ClInclude Include="tobacco.h" />

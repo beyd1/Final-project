@@ -1,0 +1,28 @@
+Produce,Blueberries,1,12.5,3.99
+Produce,Bananas,1,52,0.69
+Produce,Avocados,1,30,1.79
+Dairy,Milk,2,25,3.59
+Dairy,Cheddar Cheese,2,14.25,4.49
+Dairy,Greek Yogurt,2,20,1.39
+Bakery,Baguette,3,15,2.99
+Bakery,Donuts,3,24,0.99
+Deli,Roast Beef,4,18.3,7.99
+Deli,Turkey Breast,4,22.5,6.49
+Pantry,Rice,5,40.5,0.89
+Pantry,Peanut Butter,5,20,3.75
+Pantry,Tomato Sauce,5,30,1.25
+Frozen,Blueberry Waffles,6,18,3.19
+Frozen,Mixed Veggies,6,35.75,2.49
+Frozen,Chicken Nuggets,6,28,4.99
+Beverages,Orange Juice,7,22.5,3.99
+Beverages,Cola,7,50,1.49
+Beverages,Coffee,7,16,7.99
+Beverages,Energy Drink,7,35,2.99
+Lotto,Red Cherry,8,18,2
+Lotto,Michigan Winner,8,25,5
+Tobacco,Cigarettes,9,100,6.99
+Tobacco,Cigars,9,30,8.49
+Household,Laundry Detergent,10,45,9.99
+Household,Paper Towels,10,60,1.09
+Personal Care,Shampoo,11,20,5.49
+Personal Care,Toothpaste,11,25,2.49

@@ -1,24 +1,35 @@
 #pragma once
 #include <string.h>
 #include <string>
+
+#include "point.h"
+
 using namespace std;
 
 //this is a virtual class
 class products
 {
 private:
-	float price;
-	string name;
-	float stock;
+	string category;
+	string name = "no name";
+	float stock = 0.0;
+	float price = 0.0;
+	int type;
+
+
 public:
-	void virtual set_price(float);
-	float virtual get_price();
+	products();
+	products(int, string, string, float, float);
+	virtual void set_price(float);
+	virtual float  get_price();
 
-	void virtual set_name(string);
-	string virtual get_name();
+	virtual void set_name(string);
+	virtual string get_name();
 
 
-	void add_product(int);// name , price 
+
+
+	/*void add_product(float, string, float);// name , price*/
 
 };
 

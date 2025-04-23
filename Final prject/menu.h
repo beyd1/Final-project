@@ -8,11 +8,11 @@ class menu
 {
 private:
 	// i dont think this needs anything?
-	int input = 0;// bleh it needs a user input, stupid user.
+	int input = 0;// bleh it needs a user input, stupid users.
 	void color(int);
 public:
 	void print_menu();
-	void set_input(int);
+	void set_input();
 	int getinput();
 	menu();//do i need a constructor for this?
 

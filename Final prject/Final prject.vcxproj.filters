@@ -36,6 +36,9 @@
     <ClCompile Include="non_perishable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="products.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="non_perishable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
