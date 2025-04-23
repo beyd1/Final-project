@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+#include "products.h"
 using namespace std;
 
 class point

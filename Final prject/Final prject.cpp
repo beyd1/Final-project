@@ -193,14 +193,19 @@ void pull_file() {
             tobacco* t = new tobacco();
             t->set_name(name);
             t->set_price(price);
-            // if tobacco has a specialTax setter, do it here:
-            // t->set_special_tax(some_value);
+            t->set_stock(stock);
+            t->set_type(type);
+            t->set_category(type_name);
+            //t->set_special_tax(value); nahh theyre all taxed the same so i'm leaving the tobacco and lott tax's inside the class as predefined
             p = t;
         }
         else if (type == 8) {
             lotto* l = new lotto();
             l->set_name(name);
             l->set_price(price);
+            l->set_stock(stock);
+            l->set_type(type);
+            l->set_category(type_name);
             // l->set_city_tax(...); l->set_county_tax(...);
             p = l;
         }
@@ -208,6 +213,9 @@ void pull_file() {
             non_perishable* np = new non_perishable();//im running out of time everything else is non perishable
             np->set_name(name);
             np->set_price(price);
+            np->set_stock(stock);
+            np->set_type(type);
+            np->set_category(type_name);
             p = np;
         }
     }

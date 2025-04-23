@@ -10,10 +10,10 @@ private:
 	string name;
 	int type;
 public:
-	void set_price(float) override;//
-	float get_price();//I am leaving this here as a monument to my failure
+
 	tobacco();
 	tobacco(int, string, string, float, float);
 	~tobacco();
+	float compute_price();
 };
 

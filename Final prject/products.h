@@ -20,16 +20,25 @@ private:
 public:
 	products();
 	products(int, string, string, float, float);
+	//price
 	virtual void set_price(float);
 	virtual float  get_price();
-
+	//name
 	virtual void set_name(string);
-	virtual string get_name();
-
-
-
+	virtual string get_name();	
+	//stock
+	void set_stock(float);
+	float get_stock();
+	//type
+	void set_type(int);
+	int get_type();
+	//category
+	void set_category(string);
+	string get_category();
 
 	/*void add_product(float, string, float);// name , price*/
+
+	float compute_price();
 
 };
 

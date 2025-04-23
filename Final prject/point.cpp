@@ -199,6 +199,7 @@ void point::sell_item(string name, float amount)
 				here->stock = here->stock - amount;
 				//print a statement to confirm selling of item
 				cout << "Sold " << amount << " Units of " << here->name << endl;
+				/*cout << "at a price of " << here->compute_price();*/
 				return;
 			}
 			else {

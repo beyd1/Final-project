@@ -3,7 +3,7 @@
 class produce : public products
 {
 private:
-	float stock;
+	//unused no time
 
 public:
 

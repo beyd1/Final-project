@@ -1,35 +1,13 @@
 #include "lotto.h"
 
-void lotto::set_price (float price)
-{
-	products::set_price(price);
-	float city = products::get_price() * city_tax;
-	float county = products::get_price() * county_tax;
-	price = price * (city + county);//I know this can be simplified
-	//, but math is stupid so lets break it down.
-	this->price = price;
-	
-}
-
-float lotto::get_price()
-{
-	return price;
-}
-
-void lotto::set_name(string name) 
-{
-	this->name = name;
-}
-
-string lotto::get_name()
-{
-	return name;
-}
 
 lotto::lotto()
 {
-	city_tax = 0.05;
-	county_tax = 0.08;
+	price = 0.0f;
+	stock = 0.0f;
+	type = 0;
+	city_tax = 0.05f;
+	county_tax = 0.08f;
 	lotto::set_name("No Game Name");
 	lotto::set_price(1.00);
 }
@@ -41,10 +19,18 @@ lotto::lotto(int type, string category, string name, float stock, float price)
 	this->name = name;
 	this->stock = stock;
 	this->price = price;
+	city_tax = 0.05f;
+	county_tax = 0.08f;
 }
 
 lotto::~lotto()
 {
 	//Watch me as i become chrome destroyer of memory.
 	//no pointers to dangle so w/e
+}
+
+float lotto::compute_price()
+{
+
+	return products::compute_price() * (city_tax + county_tax) + products::compute_price();
 }

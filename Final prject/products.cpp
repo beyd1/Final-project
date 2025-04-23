@@ -6,6 +6,7 @@ products::products()
 	price = 0.0;
 	name = "noname";
 	stock = 0.0;
+	type = 0;
 }
 
 products::products(int type, string category, string name, float stock, float price)
@@ -36,6 +37,41 @@ void products::set_name(string name)
 string products::get_name()
 {
 	return name;
+}
+
+void products::set_stock(float stock)
+{
+	this->stock = stock;
+}
+
+float products::get_stock()
+{
+	return stock;
+}
+
+void products::set_type(int type)
+{
+	this->type = type;
+}
+
+int products::get_type()
+{
+	return type;
+}
+
+void products::set_category(string category)
+{
+	this->category = category;
+}
+
+string products::get_category()
+{
+	return category;
+}
+
+float products::compute_price()
+{
+	return price;
 }
 
 
